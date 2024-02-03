@@ -1,14 +1,9 @@
 import MyComponent from './MyComponent';
 import Say from './say';
+import EventPractice from './EventPractice';
 
 const App = () => {
-  return (
-    /*<MyComponent name="React" favoriteNumber={1}>
-      리액트
-    </MyComponent>
-    */
-    <Say />
-  );
+  return <EventPractice />;
 };
 
 export default App;
