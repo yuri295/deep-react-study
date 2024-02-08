@@ -1,8 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Info = () => {
   const [name, setName] = useState('');
   const [nickname, setNickname] = useState('');
+
+  useEffect(() => {
+    console.log('name');
+  }, [name]); //name값이 업데이트될 때만 실행
 
   const onChangeName = (e) => {
     setName(e.target.value);
